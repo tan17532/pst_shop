@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+:root{
+
+    /*      Theme colors        */
+    --text-gray: #3f4954;
+    --text-light : #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+
+    /* gradient color   */
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+
+}
+
+
+/* ---------------- Global Classes ---------------*/
+
+a{
+    text-decoration: none;
+    color: var(--text-gray);
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+
+h2{
+    font-family: var(--Lexend);
+}
+
+h3{
+    font-family: var(--Livvic);
+    font-size: 1.3rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+
+span{
+    font-family: var(--Abel);
+}
+
+.container{
+    margin: 0 5vw;
+}
+
+.text-gray{
+    color: var(--text-gray);
+}
+
+p{
+    font-family: var(--Lexend);
+    color: var(--text-light);
+}
+
+/* ------x------- Global Classes -------x-------*/
+
+/* --------------- navbar ----------------- */
+
+
+
+
+
+.small-contrainer{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 40px;
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+    font-family: var(--Livvic);
+    font-size: 30px;
+}
+
+.title::after{
+    content: '';
+    background: #9f36e1;
+    width: 150px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+  
+  .header_fixed {
+    max-height: 1000vh;
+    width: 80%;
+    overflow: auto;
+    margin-left: 10%;
+
+  }
+
+  .header_fixed h3{
+      font-family: var(--Livvic);
+  }
+
+  .header_fixed table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  input{
+    width: 30px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 15px;
+    border: 1px solid #9f36e1;
+    font-family: var(--Lexend);
+}
+
+    input:focus{
+    outline: none;
+}
+
+  
+  .header_fixed thead th {
+    position: sticky;
+    top: 0;
+    background-color: #9f36e1;
+    color: #e6e7e8;
+    font-size: 15px;
+  }
+  
+  th,
+  td {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: var(--Livvic);
+  }
+  
+  td img {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    border: 5px solid #e6e7e8;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #edeef1;
+  }
+  
+  tr:hover td {
+    color: #44b478;
+    cursor: pointer;
+    background-color: #ffffff;
+  }
+  
+  td button {
+    border: none;
+    padding: 7px 20px;
+    border-radius: 20px;
+    background-color: #11101d;
+    color: #e6e7e8;
+    font-family: var(--Livvic);
+  }
+  
+  .btn{
+    display: inline;
+    background: #190d5c;
+    color: #fff;
+    padding: 8px 15px;
+    margin: 30px 0;
+    border-radius: 30px;
+    font-family: var(--Livvic);
+    text-decoration: none;
+  }
+  .btn:hover{
+    background: #e9e8e8;
+    color: #0b633e;
+  }
+  
+  .home-section#blur.active{
+    filter: blur(20px);
+  } 
+  
+  
+  
+
+  
+  
+  
+  .font h3{
+      font-family: var(--Livvic);
+      font-size: 16px;
+  }
+
+  .wab{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .wab .order img{
+    justify-content: center;
+    width: 60%;
+  }
+
+
+.wab .fo{
+    margin-top: 15%;
+    margin-right: 10%;
+}
+
+.wab .fo h1,h2{
+    margin: .3rem;
+}
+
+  .wab .fo h1{
+    font-family: var(--Livvic);
+    font-size: 60px;
+  }
+
+  .wab .fo h2{
+    font-family: var(--Livvic);
+    font-size: 60px;
+  }
+  .bt-nn {
+  width: 100px;
+  background-color: rgb(240, 156, 61);
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: .3rem;
+  /* display: block; */
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 20px;
+  font-family: var(--Livvic);
+}
+
+.bt-nn.transparent:hover {
+  background-color: white;
+  color: rgb(245, 177, 99);
+}
+
+.bt-nn:hover {
+  background-color: rgb(245, 177, 99);
+}
+  
+  
+  @media (max-width: 420px) {
+    .sidebar.close .nav-links li .sub-menu{
+      display: none;
+    }
+  }
+  
